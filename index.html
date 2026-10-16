@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Feliz Cumpleaños Linda! 🎉</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Audios -->
+  <audio id="audioInicio" src="inicio.mp3" preload="auto"></audio>
+  <audio id="audioFestejar" src="festejar.mp3" preload="auto"></audio>
+
+  <!-- Fondo -->
+  <div class="bg">
+    <div class="gradient"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Globos -->
+  <div class="balloons" id="balloons"></div>
+
+  <!-- Confeti -->
+  <canvas id="confetti"></canvas>
+
+  <!-- Tarjeta -->
+  <main class="card" id="card">
+    <div class="photo-wrapper">
+      <div class="photo">
+        <!-- Cambia "linda.jpg" por el nombre de tu foto -->
+        <img src="linda.jpg" alt="Linda" id="photoImg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="photo-fallback">L</div>
+      </div>
+      <div class="ring"></div>
+    </div>
+
+    <p class="greeting">¡Hoy es un día especial!</p>
+    <h1 class="title">Feliz Cumpleaños</h1>
+    <h2 class="name">Linda</h2>
+
+    <p class="message" id="message"></p>
+
+    <div class="actions">
+      <button class="btn btn-main" id="partyBtn">
+        <span>¡Celebrar!</span>
+        <span class="btn-icon">🎉</span>
+      </button>
+      <button class="btn btn-soft" id="wishBtn">
+        Otro deseo 💌
+      </button>
+    </div>
+
+    <p class="from">Con mucho cariño 💖</p>
+  </main>
+
+  <!-- Corazones -->
+  <div id="hearts"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
